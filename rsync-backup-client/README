@@ -1,0 +1,17 @@
+
+	Tutorial
+1. Change directory to demo-backup 
+2. Execute index.sh 
+
+Note: 
+-Before executing, please config hosts file (/etc/hosts) and restart network service. 
+	- add ip address of backup server to /etc/hosts 
+		folowing this syntax:  <ip address> server-backup
+
+- To schedule local backup you need to create SSH-Keygen between server and client
+	●	Create SSH key 
+			ssh-keygen
+	●	Create SSH without password
+			ssh-copy-id hostname
+	or folow this tutorial: https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+-  To prepare for backuping to ggdrive, read this instruction: https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
